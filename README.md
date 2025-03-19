@@ -28,7 +28,9 @@ MAX_JOBS=64 pip install flash-attn --no-build-isolation
 
 Through vLLM, you can generate multiple files at a time (option max_num_seqs, set it to the maximum given to you by vLLM). On a A100 80Gb GPU, you can generate 25 files at a time in about 10min. Note that the model does not work when loaded in float16 (it returns "!!!!!!!!!"); it only works properly in bfloat16. It is not clear why this is the case.
 
-You can provide prompts in various ways: 1) command-line, 2) text file containing multiple prompts, or 3) huggingface dataset such as our dataset of 10K synthetic prompts [GameAnimationPrompts10K](https://huggingface.co/datasets/SamsungSAILMontreal/GameAnimationPrompts10K). See exp/generating_video_games.sh for examples on how to use generating SWF files with each of the 3 methods provided.
+You can provide prompts in various ways: 1) command-line, 2) text file containing multiple prompts, or 3) huggingface dataset such as our dataset of 10K synthetic prompts [GameAnimationPrompts10K](https://huggingface.co/datasets/SamsungSAILMontreal/GameAnimationPrompts10K). 
+
+See [exp/generating_video_games.sh](https://github.com/SamsungSAILMontreal/ByteCraft/blob/main/exp/generating_video_games.sh) for examples on how to use generating SWF files with each of the 3 methods provided.
 
 ## Prompt format (examples)
 
