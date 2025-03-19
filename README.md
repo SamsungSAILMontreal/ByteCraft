@@ -36,7 +36,7 @@ See [exp/generating_video_games.sh](https://github.com/SamsungSAILMontreal/ByteC
 
 You can write the prompt however you like, it's possible that there is an optimal way in order to improve output quality or diversity. We recommend the following two formats as example. Feel free to be creative and try to wild broken prompts.
 
-Structured video game prompt:
+Structured prompt:
 ```
 "Please generate a video game with the following specifications: 
 - Frame rate: 24.0
@@ -49,7 +49,7 @@ Structured video game prompt:
 "
 ```
 
-Unstructured animation prompt:
+Unstructured prompt:
 ```
 "Generate an animation titled MegaTurtles depicting turtles fighting in an arena. It should be 30Kb in size and in english language. Make sure that the resolution is 500x400.
 ```
