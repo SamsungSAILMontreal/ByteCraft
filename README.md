@@ -19,10 +19,9 @@ Install [Ruffle](https://ruffle.rs) to read the generated files.
 
 You must install all the requirements below (adapted to your situation).
 ```
-# assuming python/3.10, cuda/11.8
-pip install --upgrade pip setuptools wheel ninja
-pip install xformers https://github.com/vllm-project/vllm/releases/download/v0.7.3/vllm-0.7.3+cu118-cp38-abi3-manylinux1_x86_64.whl --extra-index-url https://download.pytorch.org/whl/cu118
-pip install datasets==3.1.0 pylzma bitstring
+# install requirements (assuming python 3.10 and cuda 11.8)
+pip install ninja xformers datasets pylzma bitstring https://github.com/vllm-project/vllm/releases/download/v0.7.3/vllm-0.7.3+cu118-cp38-abi3-manylinux1_x86_64.whl --extra-index-url https://download.pytorch.org/whl/cu118
+# flash attention v2
 MAX_JOBS=64 pip install flash-attn --no-build-isolation
 ```
 
