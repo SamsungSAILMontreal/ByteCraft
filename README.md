@@ -17,11 +17,14 @@ Since ByteCraft is the first of its kind, expect most generated files to be brok
 
 Install [Ruffle](https://ruffle.rs) to read the generated files.
 
-You must install all the requirements below (adapted to your situation).
+You must install all the requirements below.
+
 ```
-# install requirements (assuming python 3.10 and cuda 11.8)
-pip install ninja xformers datasets pylzma bitstring https://github.com/vllm-project/vllm/releases/download/v0.7.3/vllm-0.7.3+cu118-cp38-abi3-manylinux1_x86_64.whl --extra-index-url https://download.pytorch.org/whl/cu118
-# flash attention v2
+# install main requirements
+pip install ninja xformers datasets pylzma bitstring 
+# install vLLM (assuming python 3.10 and cuda 11.8); see https://docs.vllm.ai/en/latest/getting_started/installation/gpu.html
+pip install https://github.com/vllm-project/vllm/releases/download/v0.7.3/vllm-0.7.3+cu118-cp38-abi3-manylinux1_x86_64.whl --extra-index-url https://download.pytorch.org/whl/cu118
+# install flash attention v2
 MAX_JOBS=64 pip install flash-attn --no-build-isolation
 ```
 
