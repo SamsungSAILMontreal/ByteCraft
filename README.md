@@ -28,7 +28,7 @@ pip install https://github.com/vllm-project/vllm/releases/download/v0.7.3/vllm-0
 MAX_JOBS=64 pip install flash-attn --no-build-isolation
 ```
 
-## Generating bytes
+## Generating bytes of files
 
 Through vLLM, you can generate multiple files at a time (option max_num_seqs, set it to the maximum given to you by vLLM). On a A100 80Gb GPU, you can generate 25 files at a time in about 10min. Note that the model does work properly when loaded in float16; it requires bfloat16.
 
