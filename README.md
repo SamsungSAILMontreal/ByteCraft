@@ -28,7 +28,7 @@ MAX_JOBS=64 pip install flash-attn --no-build-isolation
 
 ## Generating bytes
 
-Through vLLM, you can generate multiple files at a time (option max_num_seqs, set it to the maximum given to you by vLLM). On a A100 80Gb GPU, you can generate 25 files at a time in about 10min. Note that the model does work properly when loaded in float16; please use bfloat16.
+Through vLLM, you can generate multiple files at a time (option max_num_seqs, set it to the maximum given to you by vLLM). On a A100 80Gb GPU, you can generate 25 files at a time in about 10min. Note that the model does work properly when loaded in float16; it requires bfloat16.
 
 You can provide prompts in various ways: 1) command-line, 2) text file containing multiple prompts, or 3) huggingface dataset such as our dataset of 10K synthetic prompts [GameAnimationPrompts10K](https://huggingface.co/datasets/SamsungSAILMontreal/GameAnimationPrompts10K). 
 
