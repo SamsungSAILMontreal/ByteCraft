@@ -71,6 +71,14 @@ temperature=0.1 # lower temperature = more deterministic and less diverse
 min_p=0.1 # higher min_p = more deterministic and less diverse
 ```
 
-## Reference
+## Temporary reference (it will be updated soon with a more standard format, but use this in the meantime).
 
-Soon
+If you find our work useful, please consider citing:
+
+@misc{bytecraft2025github,
+  author       = {Alexia Jolicoeur-Martineau and Emy Gervais},
+  title        = {ByteCraft: Generating video games and animations through bytes},
+  year         = {2025},
+  url          = {https://github.com/SamsungSAILMontreal/ByteCraft/blob/main/paper/ByteCraft.pdf},
+  note         = {Accessed: 2025-03-23},
+}
