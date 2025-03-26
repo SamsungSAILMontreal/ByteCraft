@@ -76,9 +76,9 @@ min_p=0.1 # higher min_p = more deterministic and less diverse
 If you find our work useful, please consider citing:
 
 ```bib
-@article{bytecraft,
+@article{202503.1962,
 	doi = {10.20944/preprints202503.1962.v1},
-	url = {https://doi.org/10.20944/preprints202503.1962.v1},
+	url = {https://www.preprints.org/manuscript/202503.1962/v1},
 	year = 2025,
 	month = {March},
 	publisher = {Preprints},
